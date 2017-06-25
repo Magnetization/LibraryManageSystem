@@ -16,11 +16,11 @@ int main(int argc, char *argv[])
 
     dbconn = QSqlDatabase::addDatabase("QMYSQL");
     dbconn.setHostName("localhost");//主机名字
-    dbconn.setDatabaseName("library");//数据库名字
-    dbconn.open("root","Tiffany19");//用户名、密码，成功返回1
+    dbconn.setDatabaseName("Database_Name");//数据库名字
+    dbconn.open("Username","Password");//用户名、密码，成功返回1
     query = (QSqlQuery)dbconn;
     MainWindow w;
     w.show();
-    w.setWindowTitle("欢迎使用浙江大学图书管理系统");
+    w.setWindowTitle("Welcome");
     return a.exec();
 }
